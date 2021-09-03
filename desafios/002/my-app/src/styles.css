@@ -89,6 +89,14 @@ a:hover {
   color: #b42146;
 }
 
+hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+
+  background-color: var(--color-border);
+}
+
 /* ------ Layout ------ */
 .grid {
   display: grid;

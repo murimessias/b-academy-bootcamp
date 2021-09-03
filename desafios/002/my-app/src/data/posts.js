@@ -5,8 +5,7 @@ const posts = [
     id: 1,
     title: 'Stealing Game Animation Techniques to Engage Users',
     content: (
-      <section>
-        <Title.H1>Stealing Game Animation Techniques to Engage Users</Title.H1>
+      <>
         <Title.H2>
           This is an article for web developers who want to get fancy-shmancy
           with the finest animations around, but don’t want to do it at the cost
@@ -84,15 +83,14 @@ const posts = [
           was stealing the animations that really unlocked the full potential of
           each website.
         </p>
-      </section>
+      </>
     )
   },
   {
     id: 2,
     title: 'Tabs in HTML?',
     content: (
-      <section>
-        <Title.H1>Tabs in HTML?</Title.H1>
+      <>
         <blockquote>
           <p>You know what tabs are, Brian.</p>
           <p>
@@ -158,15 +156,14 @@ const posts = [
             Direct Link →
           </a>
         </p>
-      </section>
+      </>
     )
   },
   {
     id: 3,
     title: '“Disambiguating Tailwind”',
     content: (
-      <section>
-        <Title.H1>“Disambiguating Tailwind”</Title.H1>
+      <>
         <p>
           I appreciated this bit of nuance from{' '}
           <a href="https://www.viget.com/articles/how-does-viget-css/">
@@ -231,7 +228,7 @@ const posts = [
           on projects is so wildly different and you hear a lot of people
           talking past each other in debate.
         </p>
-      </section>
+      </>
     )
   }
 ]

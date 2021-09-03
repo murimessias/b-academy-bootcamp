@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // Components
 import Content from './components/Content'
 import Footer from './components/Footer'
@@ -11,18 +13,23 @@ import './styles.css'
 // Data
 import posts from './data/posts'
 
-const App = () => (
-  <div className="grid">
-    <Header title="Header" />
-    <Menu />
+const App = () => {
+  const [title, setTitle] = useState(posts[0].title)
+  const [content, setContent] = useState(posts[0].content)
 
-    <div className="main">
-      <Sidebar posts={posts} />
-      <Content />
+  return (
+    <div className="grid">
+      <Header title="Header" />
+      <Menu />
+
+      <div className="main">
+        <Sidebar posts={posts} />
+        <Content title={title} content={content} />
+      </div>
+
+      <Footer />
     </div>
-
-    <Footer />
-  </div>
-)
+  )
+}
 
 export default App
