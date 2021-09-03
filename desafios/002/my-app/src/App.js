@@ -17,13 +17,21 @@ const App = () => {
   const [title, setTitle] = useState(posts[0].title)
   const [content, setContent] = useState(posts[0].content)
 
+  const handleChangePost = (id) => {
+    const targetPost = posts.find((post) => post.id === id)
+    const { title, content } = targetPost
+
+    setTitle(title)
+    setContent(content)
+  }
+
   return (
     <div className="grid">
       <Header title="Header" />
       <Menu />
 
       <div className="main">
-        <Sidebar posts={posts} />
+        <Sidebar posts={posts} handleChangePost={handleChangePost} />
         <Content title={title} content={content} />
       </div>
 

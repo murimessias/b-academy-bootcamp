@@ -152,7 +152,7 @@ const posts = [
           CodePen.{' '}
         </p>
         <p>
-          <a href="https://bkardell.com/blog/SpicySections.html" class="button">
+          <a href="https://bkardell.com/blog/SpicySections.html">
             Direct Link →
           </a>
         </p>
