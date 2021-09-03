@@ -8,13 +8,16 @@ import Sidebar from './components/Sidebar'
 // Styles
 import './styles.css'
 
+// Data
+import posts from './data/posts'
+
 const App = () => (
   <div className="grid">
     <Header title="Header" />
     <Menu />
 
     <div className="main">
-      <Sidebar />
+      <Sidebar posts={posts} />
       <Content />
     </div>
 

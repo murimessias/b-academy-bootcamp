@@ -1,6 +1,14 @@
-const Sidebar = () => (
+const Sidebar = ({ posts }) => (
   <aside className="sidebar">
-    <h3>Sidebar</h3>
+    <nav>
+      <ul>
+        {posts.map(({ title, id }) => (
+          <li key={id} className="sidebar-item">
+            <a href="/">{title}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </aside>
 )
 
