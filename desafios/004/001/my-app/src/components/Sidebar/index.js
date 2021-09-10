@@ -1,5 +1,7 @@
 import * as Title from '../Title'
 
+import * as S from './styles'
+
 const Sidebar = ({ posts, handleChangePost }) => {
   const handleClick = (e, id) => {
     e.preventDefault()
@@ -7,20 +9,20 @@ const Sidebar = ({ posts, handleChangePost }) => {
   }
 
   return (
-    <aside className="sidebar">
+    <S.Wrapper>
       <Title.H3>Posts</Title.H3>
       <nav>
         <ul>
           {posts.map(({ title, id }) => (
-            <li key={id} className="sidebar-item">
+            <S.Item key={id}>
               <a href="/" onClick={(e) => handleClick(e, id)}>
                 {title}
               </a>
-            </li>
+            </S.Item>
           ))}
         </ul>
       </nav>
-    </aside>
+    </S.Wrapper>
   )
 }
 

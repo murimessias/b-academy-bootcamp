@@ -1,20 +1,4 @@
 /* ------ Layout ------ */
-.sidebar {
-  grid-area: sidebar;
-
-  padding: var(--spacings-md);
-
-  border-right: 1px solid var(--color-border);
-}
-
-.sidebar-item + .sidebar-item {
-  margin-top: var(--spacings-sm);
-}
-
-.sidebar h3 {
-  color: var(--color-accent);
-}
-
 .content {
   grid-area: content;
   padding: var(--spacings-xl);
