@@ -1,6 +1,6 @@
 // Components
-import Button from './Button'
-import * as Title from './Title'
+import Button from '../Button'
+import * as Title from '../Title'
 
 const Content = ({ content, title }) => {
   return (

@@ -1,4 +1,4 @@
-import * as Title from './Title'
+import * as Title from '../Title'
 
 const Sidebar = ({ posts, handleChangePost }) => {
   const handleClick = (e, id) => {
