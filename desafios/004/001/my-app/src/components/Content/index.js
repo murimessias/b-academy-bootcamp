@@ -2,24 +2,28 @@
 import Button from '../Button'
 import * as Title from '../Title'
 
+import * as S from './styles'
+
 const Content = ({ content, title }) => {
   return (
-    <main className="content">
+    <S.Wrapper>
       <article>
         <section>
           <Title.H1>{title}</Title.H1>
           {content}
         </section>
+
         <hr />
+
         <section>
           <Title.H4>Do you want to read more?</Title.H4>
-          <div className="btn-container">
+          <S.ButtonContainer>
             <Button kind="primary" cta="Yes" />
             <Button kind="secondary" cta="No" />
-          </div>
+          </S.ButtonContainer>
         </section>
       </article>
-    </main>
+    </S.Wrapper>
   )
 }
 
