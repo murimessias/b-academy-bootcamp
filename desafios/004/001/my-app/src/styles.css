@@ -1,40 +1,4 @@
 /* ------ Layout ------ */
-.menu-wrapper {
-  grid-area: menu;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: var(--spacings-2xl);
-
-  border-bottom: 1px solid var(--color-border);
-}
-
-.menu-nav {
-  height: 100%;
-  max-width: 120rem;
-}
-
-.menu-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 100%;
-}
-
-.menu-item a {
-  padding: var(--spacings-xs) var(--spacings-md);
-
-  font-size: var(--font-sm);
-  text-transform: uppercase;
-}
-
-.menu-item a:hover {
-  border-bottom: 3px solid var(--color-accent);
-}
-
 .main {
   grid-area: main;
 

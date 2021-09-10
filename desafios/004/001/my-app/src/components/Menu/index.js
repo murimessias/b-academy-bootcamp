@@ -1,15 +1,15 @@
-const Menu = ({ children }) => (
-  <menu>
-    <div className="menu-wrapper">
-      <nav className="menu-nav">
-        <ul className="menu-list">
-          <li className="menu-item">
-            <a href="/">Menu</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </menu>
+import * as S from './styles'
+
+const Menu = () => (
+  <S.Wrapper>
+    <S.Container>
+      <S.List>
+        <S.Item>
+          <a href="/">Menu</a>
+        </S.Item>
+      </S.List>
+    </S.Container>
+  </S.Wrapper>
 )
 
 export default Menu
