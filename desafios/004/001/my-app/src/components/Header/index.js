@@ -1,7 +1,9 @@
+import * as S from './styles'
+
 const Header = ({ title }) => (
-  <header className="header">
-    <div className="header-wrapper">{title}</div>
-  </header>
+  <S.Wrapper>
+    <S.Title>{title}</S.Title>
+  </S.Wrapper>
 )
 
 export default Header

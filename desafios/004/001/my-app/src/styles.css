@@ -1,28 +1,4 @@
 /* ------ Layout ------ */
-.header {
-  grid-area: header;
-  height: var(--spacings-2xl);
-
-  background-color: var(--color-accent);
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  max-width: 120rem;
-
-  font-size: var(--font-sm);
-  font-weight: bold;
-  color: var(--color-secondary);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .menu-wrapper {
   grid-area: menu;
 
