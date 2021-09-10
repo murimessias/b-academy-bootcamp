@@ -5,6 +5,7 @@ import Content from './components/Content'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Layout from './components/Layout'
+import Main from './components/Main'
 import Menu from './components/Menu'
 import Sidebar from './components/Sidebar'
 
@@ -33,12 +34,10 @@ const App = () => {
       <Layout>
         <Header title="Header" />
         <Menu />
-
-        <div className="main">
+        <Main>
           <Sidebar posts={posts} handleChangePost={handleChangePost} />
           <Content title={title} content={content} />
-        </div>
-
+        </Main>
         <Footer />
       </Layout>
     </>

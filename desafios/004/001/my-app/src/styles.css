@@ -1,14 +1,4 @@
 /* ------ Layout ------ */
-.main {
-  grid-area: main;
-
-  display: grid;
-  grid-template-columns: 0.35fr 1fr;
-  grid-template-areas: 'sidebar content';
-
-  width: 100%;
-}
-
 .sidebar {
   grid-area: sidebar;
 
