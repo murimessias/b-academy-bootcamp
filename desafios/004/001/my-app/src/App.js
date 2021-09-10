@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Content from './components/Content'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Layout from './components/Layout'
 import Menu from './components/Menu'
 import Sidebar from './components/Sidebar'
 
@@ -29,7 +30,7 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <div className="grid">
+      <Layout>
         <Header title="Header" />
         <Menu />
 
@@ -39,7 +40,7 @@ const App = () => {
         </div>
 
         <Footer />
-      </div>
+      </Layout>
     </>
   )
 }

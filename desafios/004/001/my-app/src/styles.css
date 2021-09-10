@@ -1,16 +1,4 @@
 /* ------ Layout ------ */
-.grid {
-  display: grid;
-  grid:
-    'header' auto
-    'menu' auto
-    'main' 4fr
-    'footer' auto
-    / auto;
-
-  min-height: 100vh;
-}
-
 .header {
   grid-area: header;
   height: var(--spacings-2xl);
