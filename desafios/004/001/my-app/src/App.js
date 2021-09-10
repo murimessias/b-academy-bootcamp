@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar'
 
 // Styles
 import './styles.css'
+import GlobalStyles from './styles/globalStyles'
 
 // Data
 import posts from './data/posts'
@@ -26,17 +27,20 @@ const App = () => {
   }
 
   return (
-    <div className="grid">
-      <Header title="Header" />
-      <Menu />
+    <>
+      <GlobalStyles />
+      <div className="grid">
+        <Header title="Header" />
+        <Menu />
 
-      <div className="main">
-        <Sidebar posts={posts} handleChangePost={handleChangePost} />
-        <Content title={title} content={content} />
+        <div className="main">
+          <Sidebar posts={posts} handleChangePost={handleChangePost} />
+          <Content title={title} content={content} />
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </>
   )
 }
 
