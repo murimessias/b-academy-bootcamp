@@ -1,5 +1,6 @@
-/* ------ Layout ------ */
-footer {
+import styled from 'styled-components'
+
+export const Wrapper = styled.footer`
   grid-area: footer;
 
   display: flex;
@@ -11,4 +12,4 @@ footer {
 
   background: var(--color-primary);
   border-top: 1px solid var(--color-border);
-}
+`

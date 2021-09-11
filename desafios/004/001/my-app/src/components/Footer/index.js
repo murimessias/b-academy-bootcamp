@@ -1,7 +1,9 @@
+import * as S from './styles'
+
 const Footer = () => (
-  <footer>
+  <S.Wrapper>
     <div>Footer</div>
-  </footer>
+  </S.Wrapper>
 )
 
 export default Footer

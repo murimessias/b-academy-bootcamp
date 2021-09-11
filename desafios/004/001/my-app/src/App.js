@@ -10,7 +10,6 @@ import Menu from './components/Menu'
 import Sidebar from './components/Sidebar'
 
 // Styles
-import './styles.css'
 import GlobalStyles from './styles/globalStyles'
 
 // Data
