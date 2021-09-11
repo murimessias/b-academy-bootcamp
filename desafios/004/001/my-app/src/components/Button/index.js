@@ -1,5 +1,5 @@
-const Button = ({ kind, cta }) => (
-  <button className={`btn btn-${kind}`}>{cta}</button>
-)
+import * as S from './styles'
+
+const Button = ({ kind, cta }) => <S.Wrapper kind={kind}>{cta}</S.Wrapper>
 
 export default Button
