@@ -1,6 +1,8 @@
+import * as S from './styles'
+
 const Table = ({ cars, deleteCar }) => {
   return (
-    <table border="1">
+    <S.Wrapper>
       <thead>
         <tr>
           <th>Imagem</th>
@@ -29,12 +31,12 @@ const Table = ({ cars, deleteCar }) => {
             <td>{plate}</td>
             <td>{color}</td>
             <td>
-              <button onClick={() => deleteCar(plate)}>Oi</button>
+              <S.Button onClick={() => deleteCar(plate)}>Oi</S.Button>
             </td>
           </tr>
         ))}
       </tbody>
-    </table>
+    </S.Wrapper>
   )
 }
 
