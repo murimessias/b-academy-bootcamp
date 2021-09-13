@@ -8,10 +8,6 @@ const GlobalStyles = createGlobalStyle`
     color: #2c3e50;
   }
 
-  label {
-    display: block;
-  }
-
   .error-message {
     width: 100%;
     max-width: 10rem;

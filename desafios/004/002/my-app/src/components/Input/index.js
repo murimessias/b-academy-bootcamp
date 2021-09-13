@@ -1,14 +1,16 @@
+import * as S from './styles'
+
 const Input = ({ label, name, type, onChange, value }) => (
-  <div>
-    <label htmlFor={name}>{label}</label>
-    <input
+  <S.Wrapper>
+    <S.Label htmlFor={name}>{label}</S.Label>
+    <S.Input
       type={type}
       id={name}
       name={name}
       onChange={onChange}
       value={value}
     />
-  </div>
+  </S.Wrapper>
 )
 
 export default Input
