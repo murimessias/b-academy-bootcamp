@@ -6,7 +6,7 @@ import Form from './components/Form'
 import Layout from './components/Layout'
 import Message from './components/Message'
 import Table from './components/Table'
-import { Success, Error } from './components/Status'
+import Title from './components/Title'
 
 // Styles
 import GlobalStyles from './styles/globalStyles'
@@ -26,9 +26,7 @@ const App = () => {
     const result = await get(url)
 
     if (result.error) {
-      setMessage(
-        <Error message="Erro ao conectar com o servidor, tente novamente mais tarde" />
-      )
+      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
       setTimeout(() => {
         setMessage(null)
       }, 6000)
@@ -46,12 +44,12 @@ const App = () => {
     const result = await del(url, { plate })
 
     if (result.error) {
-      setMessage(<Error message="Algo deu errado!" />)
+      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
       resetMessage()
       return
     }
 
-    setMessage(<Success message="Boa tiozão!" />)
+    setMessage({ status: 'success', message: 'Carro removido com sucesso!' })
 
     getCars()
     resetMessage()
@@ -60,13 +58,19 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
+
+      {!!message && (
+        <Message message={message.message} status={message.status} />
+      )}
+
       <Layout>
+        <Title title="Cadastro de carros" />
         <Form
           setCar={setCar}
           setMessage={setMessage}
           resetMessage={resetMessage}
         />
-        {!!message && <Message message={message} />}
+
         <Table cars={cars} deleteCar={deleteCar} />
       </Layout>
     </>

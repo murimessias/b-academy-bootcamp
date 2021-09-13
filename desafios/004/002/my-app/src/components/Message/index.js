@@ -1,5 +1,7 @@
 import * as S from './styles'
 
-const Message = ({ message }) => <S.Wrapper>{message}</S.Wrapper>
+const Message = ({ message, status }) => (
+  <S.Wrapper status={status}>{message}</S.Wrapper>
+)
 
 export default Message

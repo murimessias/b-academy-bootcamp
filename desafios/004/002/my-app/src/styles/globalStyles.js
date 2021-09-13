@@ -13,9 +13,11 @@ const GlobalStyles = createGlobalStyle`
     --font-md: 1.6rem;
     --font-lg: 1.8rem;
     --font-xl: 2rem;
+    --font-xl: 3.2rem;
 
     --spacings-2xs: 0.8rem;
     --spacings-xs: 1.6rem;
+    --spacings-sm: 2.4rem;
     --spacings-md: 3.2rem;
     --spacings-lg: 4rem;
     --spacings-xl: 4.8rem;
@@ -57,6 +59,13 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     cursor: pointer;
   }
+
+  img {
+    width: 100%;
+    max-width: 36rem;
+    height: auto;
+  }
+
 `
 
 export default GlobalStyles
