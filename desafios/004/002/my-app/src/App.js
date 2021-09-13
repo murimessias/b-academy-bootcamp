@@ -8,7 +8,7 @@ import Message from './components/Message'
 import { Success, Error } from './components/Status'
 
 // Styles
-import './styles/styles.css'
+import GlobalStyles from './styles/globalStyles'
 
 const App = () => {
   const [cars, setCars] = useState([])
@@ -57,15 +57,18 @@ const App = () => {
   }
 
   return (
-    <main className="cars">
-      <Form
-        setCar={setCar}
-        setMessage={setMessage}
-        resetMessage={resetMessage}
-      />
-      {!!message && <Message message={message} />}
-      <Table cars={cars} deleteCar={deleteCar} />
-    </main>
+    <>
+      <GlobalStyles />
+      <main className="cars">
+        <Form
+          setCar={setCar}
+          setMessage={setMessage}
+          resetMessage={resetMessage}
+        />
+        {!!message && <Message message={message} />}
+        <Table cars={cars} deleteCar={deleteCar} />
+      </main>
+    </>
   )
 }
 
