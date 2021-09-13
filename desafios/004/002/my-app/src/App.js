@@ -3,8 +3,9 @@ import { get, url, del } from './utils/http'
 
 // Components
 import Form from './components/Form'
-import Table from './components/Table'
+import Layout from './components/Layout'
 import Message from './components/Message'
+import Table from './components/Table'
 import { Success, Error } from './components/Status'
 
 // Styles
@@ -59,7 +60,7 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <main className="cars">
+      <Layout>
         <Form
           setCar={setCar}
           setMessage={setMessage}
@@ -67,7 +68,7 @@ const App = () => {
         />
         {!!message && <Message message={message} />}
         <Table cars={cars} deleteCar={deleteCar} />
-      </main>
+      </Layout>
     </>
   )
 }

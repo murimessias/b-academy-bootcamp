@@ -20,15 +20,6 @@ const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
-  .cars {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cars table {
-    margin-left: 2rem;
-  }
-
   .error-message {
     width: 100%;
     max-width: 10rem;
