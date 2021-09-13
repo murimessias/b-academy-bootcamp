@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { post, url } from '../utils/http'
+import { post, url } from '../../utils/http'
 
 // Components
-import Button from './Button'
-import Input from './Input'
-import { Success, Error } from './Status'
+import Button from '../Button'
+import Input from '../Input'
+import { Success, Error } from '../Status'
 
 const initialFormValue = {
   image: '',
