@@ -1,7 +1,7 @@
-const Success = ({ message }) => (
-  <div className="success-message">{message}</div>
-)
+import * as S from './styles'
 
-const Error = ({ message }) => <div className="error-message">{message}</div>
+const Success = ({ message }) => <S.Wrapper>{message}</S.Wrapper>
+
+const Error = ({ message }) => <S.Wrapper>{message}</S.Wrapper>
 
 export { Success, Error }
