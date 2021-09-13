@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  display: flex;
+  display: grid;
+  grid:
+    'title title' auto
+    'form table' auto
+    / auto 1fr;
+  gap: var(--spacings-md);
+  justify-content: flex-start;
   align-items: flex-start;
 
-  table {
-    margin-left: 2rem;
-  }
+  width: 100%;
+  max-width: 140rem;
 `

@@ -4,7 +4,6 @@ import { post, url } from '../../utils/http'
 // Components
 import Button from '../Button'
 import Input from '../Input'
-import { Success, Error } from '../Status'
 
 import * as S from './styles'
 
@@ -23,12 +22,12 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
     const result = await post(url, formValue)
 
     if (result.error) {
-      setMessage(<Error message="Puts, deu zica ai tio!" />)
+      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
       resetMessage()
       return
     }
 
-    setMessage(<Success message="Opa aí eu vi vantagem!" />)
+    setMessage({ status: 'success', message: 'Carro cadastrado com sucesso' })
 
     setCar(result)
     resetMessage()
