@@ -6,6 +6,8 @@ import Button from '../Button'
 import Input from '../Input'
 import { Success, Error } from '../Status'
 
+import * as S from './styles'
+
 const initialFormValue = {
   image: '',
   brandModel: '',
@@ -55,7 +57,7 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
   const { image, brandModel, year, plate, color } = formValue
 
   return (
-    <form className="cars-form" onSubmit={handleSubmit}>
+    <S.Wrapper onSubmit={handleSubmit}>
       <Input
         type="text"
         name="image"
@@ -93,7 +95,7 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
       />
 
       <Button cta="Cadastrar carro" />
-    </form>
+    </S.Wrapper>
   )
 }
 

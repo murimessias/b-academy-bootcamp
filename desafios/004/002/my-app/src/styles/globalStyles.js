@@ -8,14 +8,6 @@ const GlobalStyles = createGlobalStyle`
     color: #2c3e50;
   }
 
-  form {
-    margin-bottom: 60px;
-  }
-
-  form div {
-    margin-bottom: 0.75rem;
-  }
-
   label {
     display: block;
   }
@@ -34,10 +26,6 @@ const GlobalStyles = createGlobalStyle`
 
     border: 1px solid orangered;
     border-radius: 2px;
-  }
-
-  .hide {
-    display: none;
   }
 `
 
