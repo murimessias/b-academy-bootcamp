@@ -22,7 +22,11 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
     const result = await post(url, formValue)
 
     if (result.error) {
-      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
+      setMessage({
+        status: 'error',
+        message:
+          'Erro ao cadastrar o carro. Verifique se os campos campos foram preenchidos corretamente'
+      })
       resetMessage()
       return
     }

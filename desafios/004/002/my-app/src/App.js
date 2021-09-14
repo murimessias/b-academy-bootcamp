@@ -26,7 +26,11 @@ const App = () => {
     const result = await get(url)
 
     if (result.error) {
-      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
+      setMessage({
+        status: 'error',
+        message:
+          'Erro ao conectar-se com o servidor. Verifique sua conexão ou aguarde alguns instantes'
+      })
       setTimeout(() => {
         setMessage(null)
       }, 6000)
@@ -44,7 +48,10 @@ const App = () => {
     const result = await del(url, { plate })
 
     if (result.error) {
-      setMessage({ status: 'error', message: 'Erro ao cadastrar' })
+      setMessage({
+        status: 'error',
+        message: 'Erro ao remover um carro'
+      })
       resetMessage()
       return
     }
