@@ -38,8 +38,8 @@ const posts = [
         <p>
           This is a topic I’ve somewhat stumbled my way into. I work as a web
           developer for an indie video game publisher called{' '}
-          <a href="https://www.devolverdigital.com/">Devolver Digital</a>. I,
-          along with <a href="https://twitter.com/vieko">Vieko</a>, make
+          <a href='https://www.devolverdigital.com/'>Devolver Digital</a>. I,
+          along with <a href='https://twitter.com/vieko'>Vieko</a>, make
           websites for these video games. While I’m primarily a dev, a good
           chunk of my job is to conceptualize and create designs. I once thought
           that design didn’t seem that hard, the truth is, as most of you
@@ -84,7 +84,7 @@ const posts = [
           each website.
         </p>
       </>
-    )
+    ),
   },
   {
     id: 2,
@@ -102,14 +102,14 @@ const posts = [
         </blockquote>
         <p>
           Brian Kardell{' '}
-          <a href="https://bkardell.com/blog/SpicySections.html">
+          <a href='https://bkardell.com/blog/SpicySections.html'>
             shares a bit about the progress
           </a>{' '}
           of bringing “Tabs” to HTML. We kinda think we know what they are, but
           you have to be <em>really specific</em> when dealing with specs and
           defining them. It’s tricky. Then, even if you settle on a solid
           definition, an HTML expression of that isn’t exactly clear.{' '}
-          <a href="https://open-ui.org/components/tabs.research.markup">
+          <a href='https://open-ui.org/components/tabs.research.markup'>
             There are all kinds of expressions of tabs
           </a>{' '}
           that all make sense in their own way. Imagine marking up tabs where
@@ -119,7 +119,7 @@ const posts = [
           like tabs already”). But it also has some problems, and it looks like
           sections-with-headers is more practical (“If you have the heading, you
           can build the TOC, but not vice-versa”).{' '}
-          <a href="https://codepen.io/bkardell/pen/VwpJGGL?editors=1100">
+          <a href='https://codepen.io/bkardell/pen/VwpJGGL?editors=1100'>
             Spicy sections
           </a>{' '}
           are a totally different pattern. And that’s just one problem they are
@@ -134,17 +134,17 @@ const posts = [
           That “works” if you ignore accessibility entirely (e.g. how you
           navigate between tabs, focus management, ARIA expectations, etc).
         </p>
-        <span id="more-346418"></span>
+        <span id='more-346418'></span>
         <p>
           Here’s{' '}
-          <a href="https://shoptalkshow.com/466/#t=04:12">
+          <a href='https://shoptalkshow.com/466/#t=04:12'>
             the ShopTalk discussion
           </a>{' '}
           and here’s a different perspective in{' '}
           <a
-            href="https://blog.codepen.io/2021/07/28/326-design-pattern-deepdives-tabs-and-infobox/"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://blog.codepen.io/2021/07/28/326-design-pattern-deepdives-tabs-and-infobox/'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             a chat I had with Stephen on CodePen Radio
           </a>{' '}
@@ -152,12 +152,12 @@ const posts = [
           CodePen.{' '}
         </p>
         <p>
-          <a href="https://bkardell.com/blog/SpicySections.html">
+          <a href='https://bkardell.com/blog/SpicySections.html'>
             Direct Link →
           </a>
         </p>
       </>
-    )
+    ),
   },
   {
     id: 3,
@@ -166,7 +166,7 @@ const posts = [
       <>
         <p>
           I appreciated this bit of nuance from{' '}
-          <a href="https://www.viget.com/articles/how-does-viget-css/">
+          <a href='https://www.viget.com/articles/how-does-viget-css/'>
             a post on Viget’s blog
           </a>
           :
@@ -190,7 +190,7 @@ const posts = [
           </p>
           <cite>
             <em>Leo Bauza</em>,{' '}
-            <a href="https://www.viget.com/articles/how-does-viget-css/">
+            <a href='https://www.viget.com/articles/how-does-viget-css/'>
               “How does Viget CSS?”
             </a>
           </cite>
@@ -202,7 +202,7 @@ const posts = [
         </p>
         <p>
           Bootstrap is similar. You can{' '}
-          <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+          <a href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'>
             link up Bootstrap off a CDN
           </a>
           , the entire untouched built version of everything it offers. You can
@@ -229,8 +229,8 @@ const posts = [
           talking past each other in debate.
         </p>
       </>
-    )
-  }
+    ),
+  },
 ]
 
 export default posts

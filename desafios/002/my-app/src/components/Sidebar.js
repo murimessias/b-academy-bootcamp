@@ -7,13 +7,13 @@ const Sidebar = ({ posts, handleChangePost }) => {
   }
 
   return (
-    <aside className="sidebar">
+    <aside className='sidebar'>
       <Title.H3>Posts</Title.H3>
       <nav>
         <ul>
           {posts.map(({ title, id }) => (
-            <li key={id} className="sidebar-item">
-              <a href="/" onClick={(e) => handleClick(e, id)}>
+            <li key={id} className='sidebar-item'>
+              <a href='/' onClick={(e) => handleClick(e, id)}>
                 {title}
               </a>
             </li>

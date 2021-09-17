@@ -12,7 +12,7 @@ const initialFormValue = {
   brandModel: '',
   year: '',
   plate: '',
-  color: '#fff000'
+  color: '#fff000',
 }
 
 const Form = ({ setCar, setMessage, resetMessage }) => {
@@ -25,7 +25,7 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
       setMessage({
         status: 'error',
         message:
-          'Erro ao cadastrar o carro. Verifique se os campos campos foram preenchidos corretamente'
+          'Erro ao cadastrar o carro. Verifique se os campos campos foram preenchidos corretamente',
       })
       resetMessage()
       return
@@ -45,7 +45,7 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
     setFormValue((prevState) => {
       return {
         ...prevState,
-        [name]: value
+        [name]: value,
       }
     })
   }
@@ -62,42 +62,42 @@ const Form = ({ setCar, setMessage, resetMessage }) => {
   return (
     <S.Wrapper onSubmit={handleSubmit}>
       <Input
-        type="text"
-        name="image"
-        label="Imagem: "
+        type='text'
+        name='image'
+        label='Imagem: '
         onChange={handleChange}
         value={image}
       />
       <Input
-        type="text"
-        name="brandModel"
-        label="Marca/Modelo: "
+        type='text'
+        name='brandModel'
+        label='Marca/Modelo: '
         onChange={handleChange}
         value={brandModel}
       />
       <Input
-        type="number"
-        name="year"
-        label="Ano: "
+        type='number'
+        name='year'
+        label='Ano: '
         onChange={handleChange}
         value={year}
       />
       <Input
-        type="text"
-        name="plate"
-        label="Placa: "
+        type='text'
+        name='plate'
+        label='Placa: '
         onChange={handleChange}
         value={plate}
       />
       <Input
-        type="color"
-        name="color"
-        label="Cor: "
+        type='color'
+        name='color'
+        label='Cor: '
         onChange={handleChange}
         value={color}
       />
 
-      <Button cta="Cadastrar carro" />
+      <Button cta='Cadastrar carro' />
     </S.Wrapper>
   )
 }

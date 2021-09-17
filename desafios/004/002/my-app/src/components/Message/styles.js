@@ -11,7 +11,7 @@ const wrapperModifiers = {
     color: var(--color-secondary);
     background: #71ff8e;
     opacity: 1;
-  `
+  `,
 }
 
 export const Wrapper = styled.div`

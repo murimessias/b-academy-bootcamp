@@ -26,7 +26,7 @@ const App = () => {
 
     if (result.error) {
       setMessage(
-        <Error message="Erro ao conectar com o servidor, tente novamente mais tarde" />
+        <Error message='Erro ao conectar com o servidor, tente novamente mais tarde' />,
       )
       setTimeout(() => {
         setMessage(null)
@@ -45,19 +45,19 @@ const App = () => {
     const result = await del(url, { plate })
 
     if (result.error) {
-      setMessage(<Error message="Algo deu errado!" />)
+      setMessage(<Error message='Algo deu errado!' />)
       resetMessage()
       return
     }
 
-    setMessage(<Success message="Boa tiozão!" />)
+    setMessage(<Success message='Boa tiozão!' />)
 
     getCars()
     resetMessage()
   }
 
   return (
-    <main className="cars">
+    <main className='cars'>
       <Form
         setCar={setCar}
         setMessage={setMessage}

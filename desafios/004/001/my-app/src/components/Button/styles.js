@@ -16,7 +16,7 @@ const wrapperModifiers = {
     &:hover {
       background: var(--color-border);
     }
-  `
+  `,
 }
 
 export const Wrapper = styled.button`

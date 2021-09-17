@@ -5,7 +5,7 @@ const Menu = () => (
     <S.Container>
       <S.List>
         <S.Item>
-          <a href="/">Menu</a>
+          <a href='/'>Menu</a>
         </S.Item>
       </S.List>
     </S.Container>

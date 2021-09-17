@@ -1,5 +1,5 @@
 const Sidebar = () => (
-  <aside className="sidebar">
+  <aside className='sidebar'>
     <h3>Sidebar</h3>
   </aside>
 )

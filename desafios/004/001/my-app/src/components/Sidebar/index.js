@@ -15,7 +15,7 @@ const Sidebar = ({ posts, handleChangePost }) => {
         <ul>
           {posts.map(({ title, id }) => (
             <S.Item key={id}>
-              <a href="/" onClick={(e) => handleClick(e, id)}>
+              <a href='/' onClick={(e) => handleClick(e, id)}>
                 {title}
               </a>
             </S.Item>

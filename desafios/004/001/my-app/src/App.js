@@ -31,7 +31,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <Layout>
-        <Header title="Header" />
+        <Header title='Header' />
         <Menu />
         <Main>
           <Sidebar posts={posts} handleChangePost={handleChangePost} />

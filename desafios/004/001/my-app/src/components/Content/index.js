@@ -18,8 +18,8 @@ const Content = ({ content, title }) => {
         <section>
           <Title.H4>Do you want to read more?</Title.H4>
           <S.ButtonContainer>
-            <Button kind="primary" cta="Yes" />
-            <Button kind="secondary" cta="No" />
+            <Button kind='primary' cta='Yes' />
+            <Button kind='secondary' cta='No' />
           </S.ButtonContainer>
         </section>
       </article>

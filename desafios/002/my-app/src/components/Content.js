@@ -4,7 +4,7 @@ import * as Title from './Title'
 
 const Content = ({ content, title }) => {
   return (
-    <main className="content">
+    <main className='content'>
       <article>
         <section>
           <Title.H1>{title}</Title.H1>
@@ -13,9 +13,9 @@ const Content = ({ content, title }) => {
         <hr />
         <section>
           <Title.H4>Do you want to read more?</Title.H4>
-          <div className="btn-container">
-            <Button kind="primary" cta="Yes" />
-            <Button kind="secondary" cta="No" />
+          <div className='btn-container'>
+            <Button kind='primary' cta='Yes' />
+            <Button kind='secondary' cta='No' />
           </div>
         </section>
       </article>

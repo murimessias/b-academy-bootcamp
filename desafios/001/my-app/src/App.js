@@ -9,11 +9,11 @@ import Sidebar from './components/Sidebar'
 import './styles.css'
 
 const App = () => (
-  <div className="grid">
-    <Header title="Header" />
+  <div className='grid'>
+    <Header title='Header' />
     <Menu />
 
-    <div className="main">
+    <div className='main'>
       <Sidebar />
       <Content />
     </div>

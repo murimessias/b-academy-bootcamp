@@ -29,7 +29,7 @@ const App = () => {
       setMessage({
         status: 'error',
         message:
-          'Erro ao conectar-se com o servidor. Verifique sua conexão ou aguarde alguns instantes'
+          'Erro ao conectar-se com o servidor. Verifique sua conexão ou aguarde alguns instantes',
       })
       setTimeout(() => {
         setMessage(null)
@@ -50,7 +50,7 @@ const App = () => {
     if (result.error) {
       setMessage({
         status: 'error',
-        message: 'Erro ao remover um carro'
+        message: 'Erro ao remover um carro',
       })
       resetMessage()
       return
@@ -71,7 +71,7 @@ const App = () => {
       )}
 
       <Layout>
-        <Title title="Cadastro de carros" />
+        <Title title='Cadastro de carros' />
         <Form
           setCar={setCar}
           setMessage={setMessage}

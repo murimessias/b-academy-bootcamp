@@ -2,7 +2,7 @@ import Button from './Button'
 import * as Title from './Title'
 
 const Content = () => (
-  <main className="content">
+  <main className='content'>
     <article>
       <section>
         <Title.H1>Stealing Game Animation Techniques to Engage Users</Title.H1>
@@ -38,8 +38,8 @@ const Content = () => (
         <p>
           This is a topic I’ve somewhat stumbled my way into. I work as a web
           developer for an indie video game publisher called{' '}
-          <a href="https://www.devolverdigital.com/">Devolver Digital</a>. I,
-          along with <a href="https://twitter.com/vieko">Vieko</a>, make
+          <a href='https://www.devolverdigital.com/'>Devolver Digital</a>. I,
+          along with <a href='https://twitter.com/vieko'>Vieko</a>, make
           websites for these video games. While I’m primarily a dev, a good
           chunk of my job is to conceptualize and create designs. I once thought
           that design didn’t seem that hard, the truth is, as most of you
@@ -87,9 +87,9 @@ const Content = () => (
       <hr />
       <section>
         <Title.H4>Do you want to read more?</Title.H4>
-        <div className="btn-container">
-          <Button kind="primary" cta="Yes" />
-          <Button kind="secondary" cta="No" />
+        <div className='btn-container'>
+          <Button kind='primary' cta='Yes' />
+          <Button kind='secondary' cta='No' />
         </div>
       </section>
     </article>

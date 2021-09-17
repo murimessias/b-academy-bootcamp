@@ -26,11 +26,11 @@ const App = () => {
   }
 
   return (
-    <div className="grid">
-      <Header title="Header" />
+    <div className='grid'>
+      <Header title='Header' />
       <Menu />
 
-      <div className="main">
+      <div className='main'>
         <Sidebar posts={posts} handleChangePost={handleChangePost} />
         <Content title={title} content={content} />
       </div>
